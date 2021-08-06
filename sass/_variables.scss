@@ -1,0 +1,46 @@
+//Colors
+$blue-color: #3DBEFF;
+$white-color: #FFFBF8;
+$pink-color: #FF7D6D;
+$yellow-color: 	#FAD400;
+$light-blue-color: #58C7FF;
+$lighter-blue-color: #94D6C8;
+$text-color: #1A212B;
+$paragraph-color: #88858B;
+$button-color: #FFF1C0;
+$green-color: #25564b;
+$dark-blue-color: #19536b;
+$footer-color: #90D4C5;
+
+//Screen size
+@mixin lg{
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin md{
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin sm{
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (max-width: 576px){
+    @content;
+  }
+}
+
+@mixin mini{
+  @media screen and (max-width: 425px){
+    @content;
+  }
+}
+
+

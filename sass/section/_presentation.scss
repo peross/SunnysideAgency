@@ -1,0 +1,22 @@
+.presentation{
+  width: 100%;
+  display: flex;
+
+  @include sm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image{
+    width: 33%;
+
+    @include sm{
+      width: 100%;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

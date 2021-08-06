@@ -1,0 +1,64 @@
+.testimonials{
+  padding: 6rem;
+
+  @include sm{
+    padding: 2rem;
+  }
+
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @include sm{
+      display: block;
+      text-align: center;
+    }
+  }
+
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    color: $paragraph-color;
+  }
+
+  &-client{
+    width: 30%;
+    text-align: center;
+
+    @include sm{
+      width: 100%;
+    }
+
+    img{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+    p{
+      margin-bottom: 40px;
+      margin-top: 40px;
+      color: $paragraph-color;
+      font-size: 1rem;
+      font-family: 'Barlow';
+    }
+
+    &-name{
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    &-role{
+      color: $paragraph-color;
+
+      @include sm{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

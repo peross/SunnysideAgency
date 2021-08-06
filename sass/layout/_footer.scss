@@ -1,0 +1,47 @@
+.footer{
+  background: $footer-color;
+
+  h2{
+    font-weight: 900;
+    text-align: center;
+    padding: 50px;
+    color: $green-color;
+    font-size: 2rem;
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    li{
+      &:nth-child(2){
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      &:nth-child(4){
+        margin-left: 10px;
+      }
+      a{
+        color: $green-color;
+
+        &:hover{
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .social{
+    margin-top: 50px;
+    padding: 20px;
+
+    img{
+      &:hover{
+        filter: brightness(10);
+      }
+    }
+  }
+}

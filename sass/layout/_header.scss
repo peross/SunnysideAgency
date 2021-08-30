@@ -1,8 +1,7 @@
 .header{
   height: 100vh;
   width: 100%;
-  background-image: url(../../../SunnysideAgency/img/image-header.jpg);
-  background-position: center;
+  background: url(../../../SunnysideAgency/img/image-header.jpg) center;
   background-size: cover;
   position: relative;
   padding: 20px;
@@ -91,6 +90,12 @@
             &:hover{
               background: rgba(255,255,255,.5);
               color: $white-color;
+
+              @include sm{
+                &:hover{
+                  background: darken($yellow-color, 2);
+                }
+              }
             }
           }
         }
